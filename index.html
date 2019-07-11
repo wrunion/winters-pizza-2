@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Winter's Pizza</title>
+     <!--Bootstrap, and my own css-->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+     <link href="css/styles.css" rel="stylesheet" type="text/css">
+     <!--jQuery CDN, followed by a link to my own scripts file-->
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+     <script src="js/scripts.js"></script>
+   </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Winter's Pizza</h2>
+      </div>
+      <form id="customPizza">
+        <div class="form-group">
+          <h5>Design your own pizza in three easy steps!</h5>
+          <p>Enter your name:</p>
+          <input type="text" required><br>
+          <p>Pick your size:</p>
+          <select class="form-control" id="size" required>
+            <option value="small">Small ($10)</option>
+            <option value="medium">Medium ($15)</option>
+            <option value="large">Large ($20)</option>
+          </select><br>
+          <p>Choose your toppings! (First two are free. Additional toppings are $1 each.)</p>
+          <input type="checkbox" name="toppings" value="playground">A playground<br>
+          <input type="checkbox" name="toppings" value="tennis-court">A tennis court<br>
+          <input type="checkbox" name="toppings" value="basketball-court">A basketball court<br>
+          <input type="checkbox" name="toppings" value="bike-path">A bike path<br>
+          <input type="checkbox" name="toppings" value="walking-path">A walking path<br>
+          <input type="checkbox" value="wheelchair-accessible" name="toppings">Wheelchair accessibility (paved paths, and close-in parking available.)<br><br>
+          <!-- <input type="checkbox" name="toppings" value="garden">A garden<br>
+          <input type="checkbox" name="toppings" value="dog-park">A dog park<br>
+          <input type="checkbox" name="toppings" value="picnic-tables">Picnic tables<br>
+          <input type="checkbox" name="toppings" value="bbq-pit">Barbecue pits<br>
+          <input type="checkbox" name="toppings" value="covered-shelter">Covered shelter<br>
+          <input type="checkbox" name="toppings" value=""><br>
+          <input type="checkbox" name="toppings" value=""><br>
+          <input type="checkbox" name="toppings" value=""><br>
+          <input type="checkbox" name="toppings" value=""><br>
+          <input type="checkbox" name="toppings" value=""><br>
+          <input type="checkbox" name="toppings" value=""><br>
+        </div> -->
+        <!-- <div id="question-2">
+        <p>Check the boxes of things you absolutely do <em>not</em> in your park experience:</p>
+        </div>
+        <div id="question-3">
+        <p>Here are some extra amenities I would like, if posssible:</p>
+        </div> -->
+
+       <button type="submit">Submit Order</button>
+      </form>
+      <div id="results" class="hidden">
+
+      </div>
+    </div>
+  </body>
+</html>
