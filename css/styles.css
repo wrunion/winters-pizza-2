@@ -3,7 +3,7 @@ html, body, header, #intro {
 }
 
 #intro {
-    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed;
+    background: url("pizza.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,4 +12,39 @@ html, body, header, #intro {
 
 .hidden {
   display: none;
+}
+
+/*Playing around with styles from Eatwell*/
+
+#section-home {
+  background: url("pizza.jpg");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b8b8b8;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  transition: .3s all ease;
+  color: #FDA403;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FDA403;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.45;
+  color: #000;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
 }

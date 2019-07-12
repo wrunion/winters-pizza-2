@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Winter's Pizza</title>
-  <!--Bootstrap, and my own css-->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <!--jQuery CDN, followed by a link to my own scripts file-->
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
+  <head>
+    <title>Jotun's Pizza Palace</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap, Google fonts, and my custom CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!--jQuery CDN and my custom JS-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
 
-<body>
+<body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+  <!--Top Nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Jotun's Palace</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navication">Menu</button>
+
+      <div class="collapse navbar-collapse" id="site-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#section-menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#section-custom-order" class="nav-link"><button type="button" class="btn btn-outline-light btn-inline btn-sm">Create A Custom Pizza</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End Nav-->
+
+  <!--Top section-->
+  <section class="site-cover" style="background-image: url(pizza.jpg);" id="section-home">
+
+  </section>
+  <!--End top section-->
+
+
   <header>
     <!--Mask-->
     <div id="intro" class="view">
@@ -21,14 +48,14 @@
           <div class="row d-flex justify-content-center text-center">
             < <div class="col-md-10">
               <!--Heading-->
-              <h2 class="display-4 font-weight-bold- white-text- pt-5 mb-2">Title</h2>
+              <h2 class="display-4 font-weight-bold text-light pt-5 mb-2">Welcome to Jotun's Palace</h2>
 
               <!--Divider-->
               <hr class="hr-light">
 
               <!--Description-->
-              <h4 class="white-text my-4">Description here Description here Description here Description here Description here Description here Description here Description here</h4>
-              <button class="btn btn-outline-white">Create A Custom Pizza</button>
+              <h4 class="text-light my-4">Description here Description here Description here Description here Description here Description here Description here Description here</h4>
+              <a href="#"><button type="button" class="btn btn-outline-light">Create A Custom Pizza</button></a>
           </div>
         </div>
       </div>
