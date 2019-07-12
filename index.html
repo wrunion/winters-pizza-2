@@ -19,14 +19,23 @@
         <div class="form-group">
           <h5>Design your own pizza in three easy steps!</h5>
           <p>Enter your name:</p>
-          <input type="text" required><br>
-          <p>Pick your size:</p>
+          <input type="text" required><br><br>
+          <p>Choose a size:</p>
           <select class="form-control" id="size" required>
-            <option value="small">Small ($10)</option>
-            <option value="medium">Medium ($15)</option>
-            <option value="large">Large ($20)</option>
+            <option value="small">11" Small ($10)</option>
+            <option value="medium">12" Large ($15)</option>
+            <option value="large">17" Family Size ($20)</option>
           </select><br>
-          <p>Choose your toppings! (First two are free. Additional toppings are $1 each.)</p>
+          <h5>Custom Toppings (free)</h5>
+          <p>Every pizza comes with our custom five cheese blend, along with any of these toppings for free! (Choose as many as you like.)</p>
+          <input type="checkbox" name="toppings-regular" value="playground">A playground<br>
+          <input type="checkbox" name="toppings-regular" value="tennis-court">A tennis court<br>
+          <input type="checkbox" name="toppings-regular" value="basketball-court">A basketball court<br>
+          <input type="checkbox" name="toppings-regular" value="bike-path">A bike path<br>
+          <input type="checkbox" name="toppings-regular" value="walking-path">A walking path<br>
+          <input type="checkbox" value="wheelchair-accessible" name="toppings-regular">Wheelchair accessibility (paved paths, and close-in parking available.)<br><br>
+          <h5>Deluxe Toppings ($1 each)</h5>
+          <p>Choose as many gourmet toppings as you like from the list below.</p>
           <input type="checkbox" name="toppings" value="playground">A playground<br>
           <input type="checkbox" name="toppings" value="tennis-court">A tennis court<br>
           <input type="checkbox" name="toppings" value="basketball-court">A basketball court<br>
