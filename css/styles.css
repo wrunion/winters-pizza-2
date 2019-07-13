@@ -54,9 +54,9 @@ h1, h2, h3, h4, h5,
   z-index: 3;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 600px) {
   .site-navbar-light {
-    background: #000 !important;
+    background: #0E0E0E !important;
     top: 0;
     position: relative;
   }
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5,
   color: rgba(255, 255, 255, 0.75);
   /* font-weight: 300; */
   font-family: "Raleway", sans-serif;
-    filter: drop-shadow(16px 16px 16px black);
+  filter: drop-shadow(16px 16px 16px black);
 }
 
 @media screen and (max-width: 768px) {
