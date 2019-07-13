@@ -10,6 +10,10 @@ html, body, header, #intro {
     background-size: cover;
 }
 
+.menu-link-2 p {
+  text-align: center;
+}
+
 /* filter: brightness(50%);
 -webkit-filter: brightness(50%);
 -moz-filter: brightness(50%);
