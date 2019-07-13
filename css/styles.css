@@ -10,8 +10,19 @@ html, body, header, #intro {
     background-size: cover;
 }
 
+#menu-header-text {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 .menu-link-2 p {
   text-align: center;
+  /* color: #b8b8b8; */
+  color: #989898;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px;
 }
 
 /* filter: brightness(50%);
@@ -20,6 +31,8 @@ html, body, header, #intro {
 -o-filter: brightness(50%);
 -ms-filter: brightness(50%); */
 
+
+/*dk grey color: 3e4550*/
 
 /*Playing around with styles from Eatwell*/
 
