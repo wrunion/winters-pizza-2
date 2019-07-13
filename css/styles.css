@@ -284,3 +284,28 @@ h1, h2, h3, h4, h5,
 /* h5 {
   filter: drop-shadow(16px 16px 16px black);
 } */
+
+.contact-header {
+  text-align: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+#section-contact {
+  background-color: black;
+}
+
+/* #section-menu img {
+  margin-left: 20px;
+} */
+
+
+
+/*CSS for Menu page*/
+#menu-page-order-button {
+  margin-top: 15px;
+}
+
+/* .contact-col p {
+  text-align: center;
+} */
