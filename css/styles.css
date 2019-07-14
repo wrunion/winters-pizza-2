@@ -3,7 +3,7 @@ html, body, header, #intro {
 }
 
 #section-home {
-    background: url("pizza6.jpg") no-repeat center center fixed;
+    background: url("background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,26 +15,15 @@ html, body, header, #intro {
   padding-bottom: 15px;
 }
 
+/* CSS modified from the "Eatwell" template available on Colorlib.com. Used with permission. */
 .menu-link-2 p {
   text-align: center;
-  /* color: #b8b8b8; */
   color: #989898;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 18px;
   padding: 15px;
 }
-
-/* filter: brightness(50%);
--webkit-filter: brightness(50%);
--moz-filter: brightness(50%);
--o-filter: brightness(50%);
--ms-filter: brightness(50%); */
-
-
-/*dk grey color: 3e4550*/
-
-/*Playing around with styles from Eatwell*/
 
 body {
   font-family: "Raleway", sans-serif;
@@ -146,7 +135,6 @@ h1, h2, h3, h4, h5,
   letter-spacing: .1em;
 }
 
-/*START new styles here */
 .bg-image, .site-cover {
   background-size: cover;
   background-repeat: no-repeat;
@@ -171,7 +159,6 @@ h1, h2, h3, h4, h5,
 
 .site-cover .site-subheading, .site-cover p {
   color: rgba(255, 255, 255, 0.75);
-  /* font-weight: 300; */
   font-family: "Raleway", sans-serif;
   filter: drop-shadow(16px 16px 16px black);
 }
@@ -187,10 +174,7 @@ h1, h2, h3, h4, h5,
   min-height: 700px !important;
 }
 
-/* h5 {
-  filter: drop-shadow(16px 16px 16px black);
-} */
-
+/* My CSS again */
 .contact-header {
   text-align: center;
   -ms-align-items: center;
@@ -209,17 +193,7 @@ h1, h2, h3, h4, h5,
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* #section-menu img {
-  margin-left: 20px;
-} */
-
-
-
-/*CSS for Menu page*/
+/* Styles for Menu page */
 #menu-page-order-button {
   margin-top: 15px;
 }
-
-/* .contact-col p {
-  text-align: center;
-} */
