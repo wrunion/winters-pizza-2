@@ -1,16 +1,22 @@
 //Business Logic -------
 function Pizza(size, toppings) {
-  this.size = size;
-  this.toppings = toppings;
+this.size = size;
+this.toppings = toppings;
 }
 
+var toppingsArray = [];
 var price = 0;
 
-var toppingsArray = [];
-
-var toppingPrice = function() {
-  return toppingsArray.length * 1;
-};
+Pizza.prototype.totalPrice = function() {
+  if (this.size === "small") {
+    price += 10;
+  } if(this.size === "large") {
+    price += 15;
+  } if (this.size === "family-size") {
+    price += 20;
+  }
+  return price + this.toppings.length *1;
+  };
 
 //UI Logic -------
 $(document).ready(function() {
@@ -20,24 +26,15 @@ $(document).ready(function() {
     var customerName = $("#customer-name").val();
     var currentSize = $("#size").val();
 
-    //Creates a toppings array by pushing the checked values into the array above
+    //Pushes the checked values into the empty array above
     $("input:checkbox[name=toppings-deluxe]:checked").each(function() {
       toppingsArray.push($(this).val());
     });
 
     var pizza1 = new Pizza(currentSize, toppingsArray);
 
-    if (pizza1.size === "small") {
-      price += 10;
-    } else if (pizza1.size === "large") {
-      price += 15;
-    } else if (pizza1.size === "family-size") {
-      price += 20;
-    }
-
-    var subtotal = toppingPrice();
-    var total = subtotal + price;
-    var confirmed = confirm("Your total is $" + total + ". Press \"okay\" to complete your order.");
+    //Lets the customer review and confirm their order
+    var confirmed = confirm("Your total is $" + pizza1.totalPrice() + ". Press \"okay\" to complete your order.");
 
     if (confirmed === true) {
       alert("Thanks for your order, " + customerName + "! Your pizza will be ready for pickup in 30 minutes.");
